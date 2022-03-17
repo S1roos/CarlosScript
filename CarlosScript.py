@@ -30,7 +30,10 @@ for obj in bpy.context.selected_objects:
     bpy.ops.object.mode_set(mode = 'EDIT')
     
     #Triangulate mesh (make every model's vert count divisible by 4), using beauty methods
-    bpy.ops.mesh.quads_convert_to_tris(quad_method='BEAUTY', ngon_method='BEAUTY')
+    bpy.ops.mesh.quads_convert_to_tris(quad_method='BEAUTY', ngon_method='BEAUTY')    
+
+    #Delete loose verts, if you edited the model at all
+    bpy.ops.mesh.delete_loose()
     
     #Swapping back to object mode to apply transforms
     bpy.ops.object.mode_set(mode = 'OBJECT')
