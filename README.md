@@ -1,5 +1,5 @@
 # CarlosScript
-Script to perform various mesh cleanup before attempting to export using Carlos' Smush Blender plugin. Includes:
+Script to perform various mesh cleanup before attempting to export using Carlos' Smush Blender plugin. Includes:  
 Limit Totals  
 Clean Weights (Remove Zero-Weights)  
 Normalize All  
